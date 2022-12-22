@@ -122,7 +122,7 @@ sigma.settings({
 
 // Define a function to map edge weights to sizes
 function getEdgeSize(weight) {
-  return weight/50
+  return Math.round(weight/50)
 }
 
 // Loop through the edges and set the size based on the weight
