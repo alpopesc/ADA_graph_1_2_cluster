@@ -8,8 +8,8 @@
     "text": ""
   },
   "text": {
-    "more": "",
-    "intro": "",
+    "more": "kkk",
+    "intro": "jj",
     "title": ""
   },
   "legend": {
@@ -24,7 +24,7 @@
   },
   "informationPanel": {
     "groupByEdgeDirection": false,
-    "imageAttribute": "Label"
+    "imageAttribute": false
   },
   "sigma": {
     "drawingProperties": {
