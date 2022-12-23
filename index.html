@@ -15,7 +15,26 @@
     <script src="js/sigma/sigma.parseJson.js" type="text/javascript" language="javascript"></script>
   <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript" language="javascript"></script>
   <script src="js/main.js" type="text/javascript" language="javascript"></script>
+	
+	
+ <script>function filterEdgesByWeight(threshold) {
+  // Loop through the edges and set the visibility based on the weight
+  sigma.graph.edges().forEach(edge => {
+    if (edge.weight >= threshold) {
+      edge.visible = true;
+    } else {
+      edge.visible = false;
+    }
+  });
 
+  // Refresh the visualization
+  sigma.refresh();
+}
+
+// Show only the edges with weight greater than or equal to 0.5
+filterEdgesByWeight(0.5);</script>
+	
+	
   <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css"/>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
   <link rel="stylesheet" media="screen and (max-height: 770px)" href="css/tablet.css" />
