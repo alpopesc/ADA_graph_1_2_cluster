@@ -108,30 +108,5 @@
   })();
 
 </script>
-<script src="ADA_graph_1_2_cluster/js/sigma/sigma.min.js"></script>
-<script>
-sigma.settings({
-  edgeSize: 'fixed', // set the edge size mode to 'fixed'
-  edgeColor: 'source', // set the edge color to reflect the source node
-  edgeLabelSize: 'proportional', // set the edge label size to be proportional to the edge size
-  defaultEdgeType: 'curve', // set the default edge type to 'curve'
-  defaultEdgeHoverColor: '#000', // set the default edge hover color to black
-  edgeHoverSizeRatio: 1, // set the edge hover size ratio to 1
-  edgeHoverExtremities: true // show the extremities of the hovered edge
-});
-
-// Define a function to map edge weights to sizes
-function getEdgeSize(weight) {
-  return weight
-}
-
-// Loop through the edges and set the size based on the weight
-sigma.graph.edges().forEach(edge => {
-  edge.size = getEdgeSize(edge.weight);
-});
-
-// Refresh the visualization
-sigma.refresh();
-</script>
 </body>
 </html>
